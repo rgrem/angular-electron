@@ -18,10 +18,12 @@ function createWindow() {
 
   // Create the browser window.
   win = new BrowserWindow({
-    x: 0,
-    y: 0,
-    width: size.width,
-    height: size.height
+    x: (size.width-1400)/2,
+    y: (size.height-900)/2,
+    width: 1400,
+    height: 900
+    //width: size.width,
+    //height: size.height
   });
 
   // and load the index.html of the app.
