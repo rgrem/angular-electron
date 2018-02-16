@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  background: white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  > li > ul {
+    padding-left: 20px;
+  }
+}
+
+li {
+  margin: 4px 0;
+}
+
+li i {
+  font-size: 10px;
+  margin-right: 7px;
+  margin-left: -15px;
+  position: relative;
+  top: -1px;
+}

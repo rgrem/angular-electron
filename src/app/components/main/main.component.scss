@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+  background: #eee;
+}
+
+.display {
+  flex: 0 0 auto;
+  margin-bottom: 10px;
+}
+
+.taglist {
+  flex: 1 0 auto;
+}

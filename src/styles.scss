@@ -1,7 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-html, body {
-  margin: 0;
-  padding: 0;
+@import '~normalize.css/normalize.css';
+@import './assets/font-awesome-4.7.0/css/font-awesome.min.css';
 
+body,
+html {
   height: 100%;
 }

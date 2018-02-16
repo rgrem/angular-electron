@@ -14,11 +14,15 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { ElectronService } from './providers/electron.service';
+import { CueService } from './providers/cue.service';
 
 import { WebviewDirective } from 'app/directives/webview.directive';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
+import { MainComponent } from './components/main/main.component';
+
+import { DisplayComponent } from './components/display/display.component';
+import { TaglistComponent } from './components/taglist/taglist.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -28,7 +32,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    MainComponent,
+    DisplayComponent,
+    TaglistComponent,
     WebviewDirective
   ],
   imports: [
@@ -44,7 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     })
   ],
-  providers: [ElectronService],
+  providers: [ElectronService, CueService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

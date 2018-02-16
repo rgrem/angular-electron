@@ -1,7 +1,7 @@
 {
-  "PAGES": {
-      "HOME": {
-          "TITLE": "App works !"
+  "COMPONENT": {
+      "DISPLAY": {
+          "TITLE": "Hello, i`m display!"
       }
   }
 }

@@ -1,0 +1,15 @@
+<ul *ngIf="cueService.cueTree">
+  <li *ngFor="let command of cueService.cueTree.tree.children">
+    <i *ngIf="command.children.length" class="fa fa-plus" aria-hidden="true"></i>{{command.rawText}}
+    <ul *ngIf="command.children.length">
+      <li *ngFor="let fileChild of command.children">
+        <i *ngIf="fileChild.children.length" class="fa fa-plus" aria-hidden="true"></i>{{fileChild.rawText}}
+        <ul *ngIf="fileChild.children.length">
+          <li *ngFor="let trackChild of fileChild.children">
+            {{trackChild.rawText}}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
